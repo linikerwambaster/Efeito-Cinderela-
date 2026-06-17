@@ -1,24 +1,14 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-5ZLS3XN7');</script>
+<!-- End Google Tag Manager -->
 <meta charset="UTF-8">
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=AW-10992640372"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-  gtag('config', 'AW-10992640372');
-
-  /* ===== EVENTO DE CONVERSÃO (COMPRA) — dispara nesta página de obrigado ===== */
-  gtag('event', 'conversion', {
-    'send_to': 'AW-10992640372/rhMMCKKKisEcEPTC2fko',
-    'value': 27.0,
-    'currency': 'BRL',
-    'transaction_id': ''
-  });
-</script>
-
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Compra confirmada — Efeito Cinderela</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -99,6 +89,10 @@ h1,h2{font-family:'Fraunces',serif;font-weight:600;line-height:1.12}
 </style>
 </head>
 <body>
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5ZLS3XN7"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
 <div class="card">
   <div class="check">
     <svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"></polyline></svg>
@@ -128,5 +122,15 @@ h1,h2{font-family:'Fraunces',serif;font-weight:600;line-height:1.12}
     Não recebeu em até 10 minutos? Fale com a gente: <a href="mailto:SEU-EMAIL@SEUDOMINIO.com">SEU-EMAIL@SEUDOMINIO.com</a>
   </div>
 </div>
+<script>
+  // Sinaliza ao GTM que esta é a página de compra concluída.
+  // O GTM usa o evento "purchase" como acionador das tags de conversão (Google Ads + Meta Purchase).
+  window.dataLayer = window.dataLayer || [];
+  window.dataLayer.push({
+    'event': 'purchase',
+    'value': 27.00,
+    'currency': 'BRL'
+  });
+</script>
 </body>
 </html>
