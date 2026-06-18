@@ -190,6 +190,15 @@ section{padding:54px 0}
 .timer .num{font-family:'Cormorant Garamond',serif;font-size:34px;font-weight:600;
   display:block;color:var(--gold-light);line-height:1}
 .timer .lbl{font-size:10px;text-transform:uppercase;letter-spacing:1.5px;opacity:.7;color:#fff;margin-top:4px}
+/* No desktop: dá mais respiro e aumenta os quadradinhos pra preencher melhor */
+@media (min-width:700px){
+  .scarcity-inner{padding:48px 40px}
+  .timer{gap:20px}
+  .timer .box{min-width:96px;padding:20px 22px;border-radius:18px}
+  .timer .num{font-size:46px}
+  .timer .lbl{font-size:11px;margin-top:6px}
+  .scarcity-inner h3{font-size:30px}
+}
 
 /* ===== GUARANTEE ===== */
 .guar{display:flex;gap:22px;align-items:center;flex-wrap:wrap;
